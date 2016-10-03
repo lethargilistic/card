@@ -43,6 +43,8 @@ ul {
 * {
 	-webkit-box-sizing: border-box;
 	   -moz-box-sizing: border-box;
+	    -ms-box-sizing: border-box;
+	     -o-box-sizing: border-box;
 		    box-sizing: border-box;
 }
 
@@ -193,16 +195,19 @@ ul.icons li a:hover {
 	-webkit-transform-origin: 50% 50%;
 	   -moz-transform-origin: 50% 50%;
 	    -ms-transform-origin: 50% 50%;
+	     -o-transform-origin: 50% 50%;
 	        transform-origin: 50% 50%;
 	
 	-webkit-transform: rotateX(0deg);
 	   -moz-transform: rotateX(0deg);
 	    -ms-transform: rotateX(0deg);
+	     -o-transform: rotateX(0deg);
 		    transform: rotateX(0deg);
 		
 	-webkit-transition: opacity 1s ease, -webkit-transform 1s ease;
 	   -moz-transition: opacity 1s ease, -moz-transform 1s ease;
 		-ms-transition: opacity 1s ease, -ms-transform 1s ease;
+		 -o-transition: opacity 1s ease, -ms-transform 1s ease;
 		    transition: opacity 1s ease, transform 1s ease;
 }
 #main .avatar {
@@ -217,6 +222,18 @@ ul.icons li a:hover {
 	margin: 0 auto;
 	border-radius: 100%;
 	box-shadow: 0 0 0 1.5em #ffffff;
+	
+	-webkit-filter: grayscale(95%);
+       -moz-filter: grayscale(95%);
+        -ms-filter: grayscale(95%);
+         -o-filter: grayscale(95%);
+            filter: grayscale(95%);
+
+    -webkit-transform: rotate(20deg);
+       -moz-transform: rotate(20deg);
+        -ms-transform: rotate(20deg);
+         -o-transform: rotate(20deg);
+            transform: rotate(20deg);
 }
 #main .avatar:before {
 	content: '';
@@ -245,6 +262,7 @@ ul.icons li a:hover {
 	-webkit-align-self: -webkit-flex-end;
 	   -moz-align-self: -moz-flex-end;
 		-ms-align-self: -ms-flex-end;
+		 -o-align-self: -o-flex-end;
 		    align-self: flex-end;
 	
 	width: 100%;
