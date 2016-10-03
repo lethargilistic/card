@@ -293,7 +293,11 @@ ul.icons li a:hover {
 }
 #wrapper {
 	background-image: url("../../images/background.jpeg");
-	
+    position: relative;
+	min-height: 100%;
+	padding: 1.5em;
+	z-index: 2;
+
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
@@ -318,11 +322,12 @@ ul.icons li a:hover {
 	   -moz-perspective: 1000px;
 	    -ms-perspective: 1000px;
 		    perspective: 1000px;
-		
-	position: relative;
-	min-height: 100%;
-	padding: 1.5em;
-	z-index: 2;
+
+    -webkit-filter: grayscale(100%);
+       -moz-filter: grayscale(100%);
+        -ms-filter: grayscale(100%);
+         -o-filter: grayscale(100%);
+            filter: grayscale(100%);
 }
 #wrapper > * {
 	z-index: 1;
