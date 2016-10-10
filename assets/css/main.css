@@ -292,7 +292,6 @@ ul.icons li a:hover {
     color: #ccc;
 }
 #wrapper {
-	background-image: url("../../images/background.jpeg");
     position: relative;
 	min-height: 100%;
 	padding: 1.5em;
